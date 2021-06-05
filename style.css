@@ -3,6 +3,8 @@
     padding: 0;
     font-family: sans-serif, Helvetica;
     overflow:hidden;
+    box-sizing: border-box;
+
 }
 
 @viewport{
@@ -10,21 +12,30 @@
     width: device-width;
 }
 
-.background_index{
-    width: 100;
-    height: 140vh;
+.container_index{
+    width: 100%;
+    height: 135vh;
+    display: block; 
+    flex-direction: row;
+    flex-wrap: nowrap; 
     background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/plant_key_watermark.jpeg);
     background-size: cover;
-    background-position: center;    
-}
-.background_pi{
-    width: 100;
-    height: 140vh;
+    background-position: center; 
+    background-clip: unset;
+  } 
+ 
+
+.container_pi{
+    width: 100%;
+    height: 100vh;
+    display: block; 
+    flex-direction: row;
+    flex-wrap: nowrap; 
     background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/Pie_key_watermark.jpeg);
     background-size: cover;
     background-position: center; 
-
-}
+    background-clip: unset;
+  } 
 
 .sidenav {
     height: 100%;
@@ -37,6 +48,8 @@
     display: block;
     align-items: left;
     justify-content: left;
+    float: center;
+    overflow: auto;
   }
   
   .sidenav ul li{
@@ -49,6 +62,7 @@
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
+    display: block;
 }
 
   .sidenav ul li::after{
@@ -81,54 +95,20 @@
     margin: 25px;
 }
 
-/* .navbar{
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-}
- 
-.navbar ul li a{
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.navbar ul li::after{
-    content: '';
-    height: 3px;
-    width: 0;
-    background: #009688;
-    position: absolute;
-    left: 0; 
-    bottom: -10px;
-    transition: 0.5s;
-}
-
-.navbar ul li:hover::after{
-    content: '';
-    height: 3px;
-    width: 100%;
-    background: #009688;
-    position: absolute;
-    left: 0; 
-    bottom: -10px;
-} */
 
 .content{
     width: 100%;
     position: absolute;
     top: 50%;
+    transform: translateY(-75%);
+    text-align: center;
+    color: #fff;
+
+}
+.content_pi{
+    width: 100%;
+    position:absolute;
+    top: 20%;
     transform: translateY(-75%);
     text-align: center;
     color: #fff;
