@@ -16,8 +16,8 @@ html, body {
 
 
 .my_logo{
-    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
-    url('images/top_key.png') 0% 0% no-repeat padding-box;
+    background: /*linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),  */
+    url('images/top_key_HC.png') 0% 0% no-repeat padding-box;
     top: 0px;
     height: 333px;
     white-space: nowrap;
@@ -68,7 +68,7 @@ h4{
     top: 548px;
     width: 573px;
     height: 326px;
-    box-shadow: 10px 10px 5px grey;
+    box-shadow: 10px 10px 10px grey;
     object-fit: cover;
     background: #535353 0% 0% no-repeat padding-box;
     margin-right: 0%;
