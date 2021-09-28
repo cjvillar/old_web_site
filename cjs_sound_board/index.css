@@ -2,7 +2,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   margin: auto;
   max-width: 30rem;
-  
   padding: 2rem;
   background-color: rgb(184, 178, 178);
 }
@@ -27,14 +26,8 @@ body {
   outline: none;
   color: #fff;
   background-color: transparent;
-  /* border: none;  */
   border-radius: 2px;
-  /* padding: 1.8em; */
-  /* margin: 1em; */
-
-
-  /* border-radius: 15px;
-  box-shadow: 0 9px #999; */
+  
   color: rgba(255,255,255,0.4);
   
   font-size: 1.2em;
@@ -45,12 +38,6 @@ body {
   rgba(224, 224, 224, 0.4) 49%,
   rgba(235, 226, 226, 0.3) 50%,
   rgba(255,255,255,0.2) 100%);
-
-
-  /* box-sizing: border-box;
-  width: 3em;
-  height: 3em;
-  position: relative; */
   
 }
 
@@ -70,16 +57,19 @@ body {
   display: inline-block;
   width: 60px;
   height: 34px;
+  margin-right: 210px;
+  margin-left: -10px;
 }
 
 .switch input { 
   opacity: 0;
   width: 0;
   height: 0;
+  border: black;
 }
 
 .slider {
-  position: absolute;
+  position: relative;
   cursor: pointer;
   top: 0;
   left: 0;
@@ -97,7 +87,6 @@ body {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  /* background-color: white; */
   box-shadow: 0em 0 1em 1ex rgba(0,0,0,0.1);
   background-image: radial-gradient(ellipse 500% 110% at top center,
   rgba(253, 238, 238, 0.2) 0%, 
@@ -110,14 +99,47 @@ body {
 
 input:checked + .slider {
   background-color: transparent;
+  
 }
 
 input:focus + .slider {
   box-shadow: 0 0 1px ;
+  
 }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+}
+
+
+
+.volumeSlider{
+  -webkit-appearance: none;
+  width: 30%;
+  margin: 50px auto;
+  height: 8px;
+  margin-bottom: 15px;
+  background-color: rgb(131, 127, 127);
+  box-shadow: 0em 0 1em 1ex rgba(0,0,0,0.1);
+  background-image: radial-gradient(ellipse 500% 110% at top center,
+  rgba(253, 238, 238, 0.2) 0%, 
+  rgba(224, 224, 224, 0.4) 49%,
+  rgba(235, 226, 226, 0.3) 50%,
+  rgba(255,255,255,0.2) 100%);
+  
+}
+.volumeSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: rgb(131, 127, 127);
+  box-shadow: 0em 0 1em 1ex rgba(0,0,0,0.1);
+  background-image: radial-gradient(ellipse 500% 110% at top center,
+  rgba(253, 238, 238, 0.2) 0%, 
+  rgba(224, 224, 224, 0.4) 49%,
+  rgba(235, 226, 226, 0.3) 50%,
+  rgba(255,255,255,0.2) 100%);
+  opacity: 0.7; 
 }
