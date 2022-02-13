@@ -1,5 +1,5 @@
 
-# [cjvillar.github.io](https://cjvillar.github.io/)
+# [cjvillarreal.com](https://www.cjvillarreal.com/)
 This project is currently a work in progress. 
 <br>To do:</br>
 1. Fix naming problem with python_project.html showing upper case.
